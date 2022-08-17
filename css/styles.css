@@ -92,8 +92,17 @@ ul {
   letter-spacing: 0.02em;
   display: flex;
   padding-left: 0;
-}
+  align-items: stretch;
+  height: 100%;
 
+}
+.header-links>li>a {
+  height: 100%;
+  text-align: center;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+}
 .header-links > li:not(:last-of-type) {
   margin-right: 50px;
 }
@@ -155,9 +164,21 @@ ul {
 }
 
 .current-page {
+  position: relative;
   color: var(--accent-text-color);
   text-decoration: none;
   list-style-type: none;
+}
+.current-page::after {
+  display: block;
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
 }
 .title {
   color: var(--title-text-color);
