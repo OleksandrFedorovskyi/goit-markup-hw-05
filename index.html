@@ -24,8 +24,8 @@
           >
           <ul class="list header-links">
             <li><a href="./index.html" class="current-page link-container">Студія</a></li>
-            <li><a href="./portfolio.html" class="text-decoration">Портфоліо</a></li>
-            <li><a href="" class="text-decoration">Контакти</a></li>
+            <li><a href="./portfolio.html" class="text-decoration link-container">Портфоліо</a></li>
+            <li><a href="" class="text-decoration link-container">Контакти</a></li>
           </ul>
           <ul class="list rightside-links">
             <li>
@@ -49,7 +49,9 @@
     <main class="main-container">
       <section class="hero">
         <h1 class="hero-text title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-link button-font">Замовити послугу</button>
+        <button data-modal-open type="button" class="main-link button-font">
+          Замовити послугу
+        </button>
       </section>
 
       <section class="benefits-section section">
@@ -498,5 +500,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="close-btn">
+          <svg class="" width="11" height="11">
+            <use href="./svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
