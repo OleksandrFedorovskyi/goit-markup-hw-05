@@ -340,6 +340,9 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.list-content-immage {
+  display: block;
+}
 .portfolio-list-content {
   display: flex;
   justify-content: space-between;
