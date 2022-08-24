@@ -716,3 +716,9 @@ ul {
   width: 30px;
   height: 30px;
 }
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+  outline: var(--accent-text-color);
+}
