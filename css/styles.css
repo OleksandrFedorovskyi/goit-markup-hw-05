@@ -503,7 +503,7 @@ ul {
 }
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer-main-section {
   margin-right: 70px;
